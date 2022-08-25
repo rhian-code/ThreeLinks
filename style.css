@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap');
+
+
+
+:root {
+   --bg: #f5fcf9;
+   --white:#f9f9f9d7;
+   --gray: #a0a5a8;
+   --neu-1: #ecf0f3;
+   --neu-2:#dce7f8;
+   --shadow:#36363623;
+   --smoothbtn: linear-gradient(90deg,#ffffff,#dce7f8)
+}
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box; 
+    font-family: 'poppins';
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--neu-1);
+}
+a{
+    text-decoration: none;
+}
+main{
+    width: 700px;
+    height: 700px;
+    background-color:var(--neu-1);
+    /* backdrop-filter: blur(7px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 1.90rem;
+    outline: none;
+    box-shadow: 15px 15px 10px var(--neu-2), 
+        -15px -15px 10px var(--bg);
+        padding: 10px;
+
+
+}
+.list-style{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}   
+.list-style li{ 
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--neu-1);
+    box-shadow: 1px  10px 5px inset var(--neu-2),
+    0px 0px 2px var(--shadow);
+}
+.list-style li:hover{
+    box-shadow: -6px -6px 10px inset var(--neu-2),
+    -6px -6px 10px var(--white)
+;
+    transition: 500ms;
+}
+.list-style a{
+    color: rgb(159, 129, 241);
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 15.6rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    letter-spacing: 0.1rem;
+}
+.list-style a:hover{
+    letter-spacing: 0.2rem;
+    transition: 300ms;
+}
+footer{
+    color: #a964f8;
+}
+footer a{
+    color: #3d71ff;
+    font-weight: 500;
+}
+picture{
+    margin-top: 4rem;
+} 
+@media (max-width:750px) {
+    main{
+        width: 500px;
+    }
+
+}
+@media (max-width:550px) {
+    main{
+        width: 460px;
+    }
+    
+}
+@media (max-width:492px) {
+    main{
+        width: 393px;
+    }
+    
+}
+@media (max-width:392px) {
+    main{
+        width: 340px;
+    }
+    
+}
