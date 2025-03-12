@@ -1,24 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap');
-
-
 
 :root {
    --bg: #f5fcf9;
-   --white:#f9f9f9d7;
+   --white: #f9f9f9d7;
    --gray: #a0a5a8;
    --neu-1: #ecf0f3;
-   --neu-2:#dce7f8;
-   --shadow:#36363623;
-   --smoothbtn: linear-gradient(90deg,#ffffff,#dce7f8)
+   --neu-2: #dce7f8;
+   --shadow: #36363623;
+   --smoothbtn: linear-gradient(90deg, #ffffff, #dce7f8);
 }
-*{
-    margin: 0px;
-    padding: 0px; 
-    box-sizing: border-box; 
-    font-family: 'poppins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,53 +26,57 @@ body{
     gap: 2rem;
     background-color: var(--neu-1);
 }
-a{
+
+a {
     text-decoration: none;
 }
-main{
+
+main {
     width: 700px;
     height: 700px;
-    background-color:var(--neu-1);
-    /* backdrop-filter: blur(7px); */
+    background-color: var(--neu-1);
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 2rem;
     align-items: center;
-    border-radius: 1.90rem;
+    border-radius: 1.9rem;
     outline: none;
-    box-shadow: 15px 15px 10px var(--neu-2), 
-        -15px -15px 10px var(--bg);
-        padding: 10px;
-
-
+    box-shadow: 15px 15px 10px var(--neu-2), -15px -15px 10px var(--bg);
+    padding: 10px;
 }
-.list-style{
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 10px var(--neu-2), -15px -15px 10px var(--bg);
+}
+
+.list-style {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-}   
-.list-style li{ 
+}
+
+.list-style li {
     border-radius: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     background-color: var(--neu-1);
-    box-shadow: 1px  10px 5px inset var(--neu-2),
-    0px 0px 2px var(--shadow);
+    box-shadow: 1px 10px 5px inset var(--neu-2), 0px 0px 2px var(--shadow);
+    transition: box-shadow 500ms;
 }
-.list-style li:hover{
-    box-shadow: -6px -6px 10px inset var(--neu-2),
-    -6px -6px 10px var(--white)
-;
-    transition: 500ms;
+
+.list-style li:hover {
+    box-shadow: -6px -6px 10px inset var(--neu-2), -6px -6px 10px var(--white);
 }
-.list-style a{
+
+.list-style a {
     color: rgb(159, 129, 241);
     text-decoration: none;
-    font-family: "poppins";
     font-weight: 900;
     font-size: 1rem;
     text-transform: uppercase;
@@ -82,44 +85,48 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor:pointer;
+    cursor: pointer;
     letter-spacing: 0.1rem;
+    transition: letter-spacing 300ms;
 }
-.list-style a:hover{
+
+.list-style a:hover {
     letter-spacing: 0.2rem;
-    transition: 300ms;
 }
-footer{
+
+footer {
     color: #a964f8;
 }
-footer a{
+
+footer a {
     color: #3d71ff;
     font-weight: 500;
 }
-picture{
+
+picture {
     margin-top: 4rem;
-} 
-@media (max-width:750px) {
-    main{
+}
+
+@media (max-width: 750px) {
+    main {
         width: 500px;
     }
-
 }
-@media (max-width:550px) {
-    main{
+
+@media (max-width: 550px) {
+    main {
         width: 460px;
     }
-    
 }
-@media (max-width:492px) {
-    main{
+
+@media (max-width: 492px) {
+    main {
         width: 393px;
     }
-    
 }
-@media (max-width:392px) {
-    main{
+
+@media (max-width: 392px) {
+    main {
         width: 340px;
     }
-    
 }
